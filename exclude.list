@@ -7,7 +7,6 @@ bin/2to3*
 bin/idle3*
 bin/pydoc3*
 bin/python3*-config
-bin/pyvenv*
 # Remove standard library test suites.
 lib/python*/ctypes/test
 lib/python*/distutils/tests
@@ -20,9 +19,7 @@ lib/python*/lib-dynload/_ctypes_test*.so
 lib/python*/lib-dynload/xxlimited*.so
 lib/python*/lib-dynload/_xxtestfuzz.so
 # Remove config-* directory, which is used for compiling C extension modules.
-lib/python*/config-*
 # Remove ensurepip. If user code needs pip, it can add it to
-lib/python*/ensurepip
 # Remove Tcl/Tk GUI code. We don't build against Tcl/Tk at the moment, so this
 # will not work.
 lib/python*/idlelib
@@ -30,10 +27,8 @@ lib/python*/tkinter
 lib/python*/turtle.py
 lib/python*/turtledemo
 # Remove lib/pkgconfig files. These are used for compiling C extension modules.
-lib/pkgconfig
 # Remove site-packages directory. The Linux template unpacks user code and
 # dependencies to a different path.
-lib/python*/site-packages
 # Remove share/ directory, which contains user documentation (man pages).
 share
 # Remove pyc files. These take up space, but since most stdlib modules are
