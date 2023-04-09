@@ -51,6 +51,27 @@ RUN apt-get install -y \
         liblzma-dev \
         tk-dev
 
+#Dependeces from python of doc
+RUN apt-get install -y \
+        build-essential \
+        gdb \
+        lcov \
+        pkg-config \
+        libbz2-dev \
+        libffi-dev \
+        libgdbm-dev \
+        libgdbm-compat-dev \
+        liblzma-dev \
+        libncurses5-dev \
+        libreadline6-dev \
+        libsqlite3-dev \
+        libssl-dev \
+        lzma \
+        lzma-dev \
+        tk-dev \
+        uuid-dev \
+        zlib1g-dev
+
 # Install the Makefile and exclude list, and build Python.
 # This Makefile will assume there are two external mountpoints:
 #   /local/downloads (to ensure that we don't repeatedly download source code)
