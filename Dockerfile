@@ -1,7 +1,8 @@
 # Use Ubuntu 18.04 (bionic) as a base image. This ensures that we're using an
 # old version of libc, maximizing the compatibility of the image when it is
 # included in an AppImage.
-FROM ubuntu:18.04
+# FROM ubuntu:18.04
+FROM debian:10
 
 # Install the build requirements for Python.
 RUN apt-get update -y && \
