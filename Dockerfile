@@ -18,6 +18,38 @@ RUN apt-get update -y && \
         uuid-dev \
         zlib1g-dev
 
+# My custom requirements for Python
+RUN apt-get install -y \
+        build-essential \
+        python-dev \
+        python-setuptools \
+        python-pip \
+        python-smbus \
+        libncursesw5-dev \
+        libgdbm-dev \
+        libc6-dev \
+        zlib1g-dev \
+        libsqlite3-dev \
+        tk-dev \
+        libssl-dev \
+        openssl \
+        libffi-dev \
+        build-essential \
+        libssl-dev \
+        zlib1g-dev \
+        libbz2-dev \
+        libreadline-dev \
+        libsqlite3-dev \
+        wget \
+        curl \
+        llvm \
+        libncurses5-dev \
+        ibncursesw5-dev \
+        xz-utils \
+        tk-dev \
+        liblzma-dev \
+        tk-dev
+
 # Install the Makefile and exclude list, and build Python.
 # This Makefile will assume there are two external mountpoints:
 #   /local/downloads (to ensure that we don't repeatedly download source code)
